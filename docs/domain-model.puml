@@ -1,0 +1,50 @@
+@startuml
+skinparam roundcorner 20
+
+!define ONE_TO_ONE 1..1
+!define TWO_TO_TWO 2..2
+!define ONE_TO_MANY 1..N
+!define ONE_TO_FIVE 1..5
+
+!define compositionRelation(all, part, cardinality) all *--> part: cardinality
+!define associationRelation(client, server, cardinality) client --> server: cardinality
+!define aggregationRelation(whole, part, cardinality) whole o--> part: cardinality
+!define useRelation(user, used, cardinality) user ..> used: cardinality
+!define inheritanceRelation(child, parent, cardinality) child <|-- parent: cardinality
+
+enum ColorCombination {
+  RED
+  BLUE
+  YELLOW
+  GREEN
+  ORANGE
+  PURPLE
+  EMPTY
+}
+
+enum ColorCheckCombination {
+   BLACK
+   WHITE
+   EMPTY
+}
+
+
+compositionRelation(Mastermind, Board, ONE_TO_ONE)
+compositionRelation(Mastermind, Turn, ONE_TO_ONE)
+associationRelation(Turn, Player, ONE_TO_ONE)
+compositionRelation(Mastermind, Player, TWO_TO_TWO)
+useRelation(Board, ColorCombination, ONE_TO_MANY)
+compositionRelation(Board, SecretCombination, ONE_TO_ONE)
+compositionRelation(Board, ProposedCombination, ONE_TO_MANY)
+associationRelation(Player, ProposedCombination, ONE_TO_MANY)
+associationRelation(Player, SecretCombination, ONE_TO_ONE)
+useRelation(SecretCombination, ColorCombination, 5)
+useRelation(ProposedCombination, ColorCombination, 5)
+associationRelation(Player, CheckCombination, ONE_TO_MANY)
+useRelation(CheckCombination, SecretCombination, ONE_TO_ONE)
+useRelation(CheckCombination, ProposedCombination, ONE_TO_ONE)
+compositionRelation(CheckCombination, CorrectlyCombination, ONE_TO_FIVE)
+compositionRelation(CheckCombination, IncorrectlyCombination, ONE_TO_FIVE)
+useRelation(CorrectlyCombination, ColorCheckCombination, ONE_TO_ONE)
+useRelation(IncorrectlyCombination, ColorCheckCombination, ONE_TO_ONE)
+@enduml
