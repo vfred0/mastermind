@@ -7,7 +7,7 @@ public class PlayView {
     public void interact(PlayController controller) {
         do {
             controller.add(new ProposedCombinationView().read(controller));
-            controller.incrementAttemps();
+            controller.incrementAttempts();
             new GameView().write(controller);
         } while (!controller.finished());
         Message message = Message.LOOSER;

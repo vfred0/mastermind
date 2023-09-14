@@ -8,14 +8,14 @@ import org.example.mastermind.types.Error;
 public class Game {
     private SecretCombination secret;
     private ProposedCombination[] proposed;
-    private int attemps;
-    private final int MAX_ATTEMPS = 5;
+    private int attempts;
+    private final int MAX_ATTEMPTS = 5;
 
     public void init() {
         secret = new SecretCombination();
         secret.generate();
-        proposed = new ProposedCombination[MAX_ATTEMPS];
-        for (int i = 0; i < MAX_ATTEMPS; i++) {
+        proposed = new ProposedCombination[MAX_ATTEMPTS];
+        for (int i = 0; i < MAX_ATTEMPTS; i++) {
             proposed[i] = new ProposedCombination();
         }
     }
@@ -24,39 +24,39 @@ public class Game {
         if (isWinner()) {
             secret.generate();
         }
-        attemps = 0;
+        attempts = 0;
     }
 
-    public int getAttemps() {
-        return attemps;
+    public int getAttempts() {
+        return attempts;
     }
 
-    public ProposedCombination getPropesedCombination(int i) {
-        return proposed[i];
+    public ProposedCombination getProposedCombination(int position) {
+        return proposed[position];
     }
 
     public void add(List<Color> colors) {
-        proposed[attemps].setColors(colors);
+        proposed[attempts].setColors(colors);
     }
 
-    public Result getResult(int attemps) {
-        return secret.getResult(proposed[attemps]);
+    public Result getResult(int attempts) {
+        return secret.getResult(proposed[attempts]);
     }
 
-    public void incrementAttemps() {
-        attemps++;
+    public void incrementAttempts() {
+        attempts++;
     }
 
     public boolean finished() {
-        return attemps == MAX_ATTEMPS || isWinner();
+        return attempts == MAX_ATTEMPTS || isWinner();
     }
 
     public boolean isWinner() {
-        return secret.equals(proposed[attemps - 1]);
+        return secret.equals(proposed[attempts - 1]);
     }
 
     public Error getError(List<Color> list) {
-        return proposed[attemps].getError(list);
+        return proposed[attempts].getError(list);
     }
 
     public void setWidthCombination(int width) {

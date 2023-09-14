@@ -32,7 +32,7 @@ public class Combination {
         return false;
     }
 
-    protected Color getColor(Combination combination, int i) {
-        return combination.colors.get(i);
+    protected Color getColor(Combination combination, int position) {
+        return combination.colors.get(position);
     }
 }

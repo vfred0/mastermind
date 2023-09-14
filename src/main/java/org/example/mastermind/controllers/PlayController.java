@@ -20,8 +20,8 @@ public class PlayController extends Controller {
         controllerVisitor.visit(this);
     }
 
-    public void incrementAttemps() {
-        game.incrementAttemps();
+    public void incrementAttempts() {
+        game.incrementAttempts();
     }
 
     public boolean finished() {
@@ -40,16 +40,16 @@ public class PlayController extends Controller {
         game.add(colors);
     }
 
-    public int getAttemps() {
-        return game.getAttemps();
+    public int getAttempts() {
+        return game.getAttempts();
     }
 
-    public ProposedCombination getPropesedCombination(int attemps) {
-        return game.getPropesedCombination(attemps);
+    public ProposedCombination getProposedCombination(int attempts) {
+        return game.getProposedCombination(attempts);
     }
 
-    public Result getResult(int attemps) {
-        return game.getResult(attemps);
+    public Result getResult(int attempts) {
+        return game.getResult(attempts);
     }
 
 }

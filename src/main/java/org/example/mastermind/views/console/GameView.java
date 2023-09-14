@@ -7,10 +7,10 @@ public class GameView {
 
     public void write(PlayController controller) {
         MessageView messageView = new MessageView();
-        messageView.writeln(Message.ATTEMPTS, controller.getAttemps());
+        messageView.writeln(Message.ATTEMPTS, controller.getAttempts());
         messageView.writeln(Message.SECRET_COMBINATION);
-        for (int i = 0; i < controller.getAttemps(); i++) {
-            new ProposedCombinationView(controller.getPropesedCombination(i));
+        for (int i = 0; i < controller.getAttempts(); i++) {
+            new ProposedCombinationView(controller.getProposedCombination(i));
             messageView.writeln(Message.RESULT, controller.getResult(i).getBlacks(), controller.getResult(i).getWhites());
 
         }

@@ -5,8 +5,8 @@ import org.example.mastermind.controllers.Logic;
 import org.example.mastermind.views.console.ConsoleView;
 
 public class Mastermind {
-    private Logic logic;
-    private ConsoleView view;
+    private final Logic logic;
+    private final ConsoleView view;
 
     public static void main(String[] args) {
         new Mastermind().play();
@@ -20,9 +20,14 @@ public class Mastermind {
     private void play() {
         Controller controller;
         do {
-            if ((controller = logic.geController()) != null) {
+            controller = logic.geController();
+            if (existsController(controller)) {
                 view.interact(controller);
             }
-        } while (controller != null);
+        } while (existsController(controller));
+    }
+
+    private static boolean existsController(Controller controller) {
+        return controller != null;
     }
 }
