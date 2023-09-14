@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d420cdb-e288-4b6f-ab89-df1fef5a440e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/Mastermind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/ControllerVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/ElectionWidthCombinationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/Logic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/PlayController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/ResumeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/controllers/StartController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/models/Combination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/models/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/models/ProposedCombination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/models/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/models/SecretCombination.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/models/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/types/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/types/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/types/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/types/StateValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/ElectionWidthCombinationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/ErrorView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/GameView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/MessageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/PlayView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/ProposedCombinationView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/ResumeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/StartView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/WithGameView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/mastermind/views/console/YesNoDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/utils/Console.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DarkyenusTimeTracker">
+    <option name="totalTimeSeconds" value="440" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2VPFVnvhdCkiXqAejmCtpkU2bqk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/vfred0/Documents/Projects/mastermind/src/main/java/org/example",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/org/example" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d420cdb-e288-4b6f-ab89-df1fef5a440e" name="Changes" comment="" />
+      <created>1694729836974</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694729836974</updated>
+      <workItem from="1694729839632" duration="493000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
