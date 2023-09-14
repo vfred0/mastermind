@@ -8,8 +8,6 @@ public class ResumeView {
 
         if (!new YesNoDialog(Message.RESUME).isExit()) {
             controller.reset();
-
-            System.out.println("CONTINUAR");
         } else {
             controller.next();
         }

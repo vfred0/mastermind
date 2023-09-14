@@ -22,13 +22,11 @@ public class ConsoleView extends View {
 
     @Override
     public void interact(Controller controller) {
-        System.out.println("1. ENVIADO ACEPTACION A UN CONTROLADOR");
         controller.accept(this);
     }
 
     @Override
     public void visit(StartController controller) {
-        System.out.println("3. RECIBIENDO EL CONTROLADOR A VISITAR");
         startView.interact(controller);
     }
 

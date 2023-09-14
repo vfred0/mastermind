@@ -19,9 +19,4 @@ public class YesNoDialog {
     public boolean isExit() {
         return exit;
     }
-
-    public static void main(String[] args) {
-        System.out.println("SALIDA? " + new YesNoDialog(Message.RESUME).isExit());
-    }
-
 }
