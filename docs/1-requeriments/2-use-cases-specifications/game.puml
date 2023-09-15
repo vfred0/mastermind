@@ -18,7 +18,14 @@ state GC3 <<choice>>
 GS1 --> GS2
 note on link
     <b>System requires: </b>
-    * Propose combination
+    * Propose combination with this colors:
+            - red (r)
+            - green (g)
+            - blue (b)
+            - yellow (y)
+            - orange (o)
+            - purple (p)
+            - empty (e)
 end note
 
 GS2 --> GC1
