@@ -22,5 +22,4 @@ public class Result {
     public int getBlacks() {
         return blacks;
     }
-
 }
