@@ -39,8 +39,8 @@ public class Game {
         proposed[attempts].setColors(colors);
     }
 
-    public Result getResult(int attempts) {
-        return secret.getResult(proposed[attempts]);
+    public Result getResult(int attempt) {
+        return secret.getResult(proposed[attempt]);
     }
 
     public void incrementAttempts() {
