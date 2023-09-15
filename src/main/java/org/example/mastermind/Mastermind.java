@@ -27,7 +27,7 @@ public class Mastermind {
         } while (existsController(controller));
     }
 
-    private static boolean existsController(Controller controller) {
+    private boolean existsController(Controller controller) {
         return controller != null;
     }
 }
