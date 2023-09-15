@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+actor Player
+
+rectangle "Game" {
+    Player -- (Set secret combination)
+    Player -- (Propose combination)
+}
+@enduml

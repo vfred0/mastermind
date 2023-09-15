@@ -1,0 +1,20 @@
+@startuml
+state isResume <<choice>>
+state question as " "
+
+[*] --> IN_SETTINGS
+note right of IN_SETTINGS : Set the size of the combination
+
+IN_GAME --> IN_GAME
+note right of IN_GAME : Until the combination is guessed
+
+IN_SETTINGS --> IN_GAME
+IN_GAME --> FINISHED_GAME
+
+FINISHED_GAME --> question
+note on link : Do you want to play a new game?
+
+question --> isResume
+isResume --> IN_SETTINGS : Yes
+isResume --> [*] : No
+@enduml

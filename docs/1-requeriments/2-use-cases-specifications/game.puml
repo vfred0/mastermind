@@ -1,0 +1,57 @@
+@startuml
+!define EMPTY " "
+!define COLOR_RED [#red]
+!define COLOR_GREEN [#green]
+skinparam linetype polyline
+
+state GS1 as EMPTY
+state GS2 as EMPTY
+state GS3 as EMPTY
+state GS4 as EMPTY
+state GS5 as EMPTY
+
+state GC1 <<choice>>
+state GC2 <<choice>>
+state GC3 <<choice>>
+
+[*] --> GS1
+GS1 --> GS2
+note on link
+    <b>System requires: </b>
+    * Propose combination
+end note
+
+GS2 --> GC1
+GC1 -COLOR_GREEN-> GS3
+GC1 -COLOR_RED-> GS1
+note on link
+    <b>System show errors: </b>
+    * Colors repeated
+    * Number of colors
+end note
+
+GS3 --> GS4
+note on link
+    <b>System shows: </b>
+    * Color white if color and position are correct
+    * Color black if color is correct but position is wrong
+    * Color empty if color is not in the combination
+end note
+
+GS4 --> GC2
+GC2 -COLOR_RED-> GS1
+note on link
+    <b>System requires: </b>
+    * Propose combination
+end note
+
+GC2 --> GS5
+GS5 --> GC3
+note on link
+    <b>System requires: </b>
+    * Yes or No to play new game
+end note
+
+GC3 -COLOR_GREEN-> GS1: Yes
+GC3 --> [*]: No
+@enduml
