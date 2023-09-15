@@ -9,13 +9,13 @@ public class Game {
     private SecretCombination secret;
     private ProposedCombination[] proposed;
     private int attempts;
-    private final int MAX_ATTEMPTS = 5;
+    private final int maxAttempts = 5;
 
     public void init() {
         secret = new SecretCombination();
         secret.generate();
-        proposed = new ProposedCombination[MAX_ATTEMPTS];
-        for (int i = 0; i < MAX_ATTEMPTS; i++) {
+        proposed = new ProposedCombination[maxAttempts];
+        for (int i = 0; i < maxAttempts; i++) {
             proposed[i] = new ProposedCombination();
         }
     }
@@ -48,7 +48,7 @@ public class Game {
     }
 
     public boolean finished() {
-        return attempts == MAX_ATTEMPTS || isWinner();
+        return attempts == maxAttempts || isWinner();
     }
 
     public boolean isWinner() {
