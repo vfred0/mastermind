@@ -62,5 +62,4 @@ public class Game {
     public void setWidthCombination(int width) {
         // secret.setWidth(width);
     }
-
 }
