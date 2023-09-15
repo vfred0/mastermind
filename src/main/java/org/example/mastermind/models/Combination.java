@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.example.mastermind.types.Color;
-import org.example.utils.Console;
 
 public class Combination {
     protected static final int SIZE = 5;
