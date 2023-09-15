@@ -7,18 +7,11 @@ import java.util.List;
 
 public class ProposedCombination extends Combination {
 
-    public ProposedCombination(List<Color> colors) {
-        setColors(colors);
-    }
-
-    public ProposedCombination() {
-    }
-
     public Error getError(List<Color> colors) {
-        if (colors.size() < width || colors.size() > width) {
+        if (!containsSizeValid(colors)) {
             return Error.LENGTH;
         }
-        if (haveColorsRepeat(colors)) {
+        if (hasRepeatedColors(colors)) {
             if (colors.contains(Color.EMPTY)) {
                 return Error.COLOR;
             }
@@ -27,8 +20,14 @@ public class ProposedCombination extends Combination {
         return Error.NULL;
     }
 
-    public boolean equalsColor(SecretCombination secret, int i) {
-        return getColor(this, i).equals(getColor(secret, i));
+    private boolean containsSizeValid(List<Color> colors) {
+        int size = colors.size();
+        int minSize = 0;
+        return size > minSize && size <= SIZE;
+    }
+
+    public boolean equalsColor(SecretCombination secret, int position) {
+        return getColor(this, position).equals(getColor(secret, position));
     }
 
     public int size() {
