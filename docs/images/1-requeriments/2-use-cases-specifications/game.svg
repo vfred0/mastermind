@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="1215px" preserveAspectRatio="none" style="width:656px;height:1215px;background:#FFFFFF;" version="1.1" viewBox="0 0 656 1215" width="656px" zoomAndPan="magnify"><defs/><g><g id="GS1"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="298" y="87"/><line style="stroke:#181818;stroke-width:0.5;" x1="298" x2="348" y1="116.0679" y2="116.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="321" y="106.9659"> </text></g><g id="GS2"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="7" y="263.5"/><line style="stroke:#181818;stroke-width:0.5;" x1="7" x2="57" y1="292.5679" y2="292.5679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="30" y="283.4659"> </text></g><g id="GS3"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="45" y="525"/><line style="stroke:#181818;stroke-width:0.5;" x1="45" x2="95" y1="554.0679" y2="554.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="68" y="544.9659"> </text></g><g id="GS4"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="187" y="725"/><line style="stroke:#181818;stroke-width:0.5;" x1="187" x2="237" y1="754.0679" y2="754.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="210" y="744.9659"> </text></g><g id="GS5"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="370" y="921"/><line style="stroke:#181818;stroke-width:0.5;" x1="370" x2="420" y1="950.0679" y2="950.0679"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="393" y="940.9659"> </text></g><g id="elem_GC1"><polygon fill="#F1F1F1" points="70,386,82,398,70,410,58,398,70,386" style="stroke:#181818;stroke-width:0.5;"/></g><g id="elem_GC2"><polygon fill="#F1F1F1" points="395,836,407,848,395,860,383,848,395,836" style="stroke:#181818;stroke-width:0.5;"/></g><g id="elem_GC3"><polygon fill="#F1F1F1" points="511,1086,523,1098,511,1110,499,1098,511,1086" style="stroke:#181818;stroke-width:0.5;"/></g><ellipse cx="323" cy="16" fill="#222222" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><ellipse cx="511" cy="1199" fill="none" rx="10" ry="10" style="stroke:#222222;stroke-width:1.0;"/><ellipse cx="511.5" cy="1199.5" fill="#222222" rx="6" ry="6" style="stroke:none;stroke-width:1.0;"/><!--MD5=[8ee3aa8881b923ca0dd9678524486488]
+link *start to GS1--><g id="link_*start_GS1"><path d="M323,26.36 C323,38.87 323,61.67 323,80.45 " fill="none" id="*start-to-GS1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="323,85.13,327,76.13,323,80.13,319,76.13,323,85.13" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[cc12860eed3fa37d852c199424bc450f]
+link GS1 to GS2--><g id="link_GS1_GS2"><path d="M297.62,117.47 C224.06,130.4 16,167 16,167 C16,167 16,222 16,222 C16,222 20.36,239.84 24.52,256.9 " fill="none" id="GS1-to-GS2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="25.68,261.64,27.4315,251.9481,24.4942,256.7826,19.6597,253.8454,25.68,261.64" style="stroke:#181818;stroke-width:1.0;"/><path d="M21,172 L21,217 L183,217 L183,182 L173,172 L21,172 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M173,172 L173,182 L183,182 L173,172 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="109" x="27" y="190.897">System requires:</text><ellipse cx="32.5" cy="204.912" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="39" y="208.603">Propose combination</text></g><!--MD5=[ddf01632b8f0349ab1827966c1998045]
+link GS2 to GC1--><g id="link_GS2_GC1"><path d="M40.62,313.89 C48.11,335.08 58.7,365.04 64.91,382.61 " fill="none" id="GS2-to-GC1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="66.48,387.05,67.2426,377.2307,64.8092,382.3374,59.7025,379.904,66.48,387.05" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[78419cee2d3a38e5c596476879276dfb]
+link GC1 to GS3--><g id="link_GC1_GS3"><path d="M70,410.27 C70,432.95 70,484.76 70,518.25 " fill="none" id="GC1-to-GS3" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="70,523.18,74,514.18,70,518.18,66,514.18,70,523.18" style="stroke:#008000;stroke-width:1.0;"/></g><!--MD5=[4a1a0c8344c18fd4c96eab54cbf4c21f]
+link GC1 to GS1--><g id="link_GC1_GS1"><path d="M75.35,390.99 C104.01,358.82 240.11,206.05 297.44,141.69 " fill="none" id="GC1-to-GS1" style="stroke:#FF0000;stroke-width:1.0;"/><polygon fill="#FF0000" points="300.42,138.34,291.4424,142.3901,297.0902,142.0699,297.4103,147.7177,300.42,138.34" style="stroke:#FF0000;stroke-width:1.0;"/><path d="M204,257 L204,320 L359,320 L359,267 L349,257 L204,257 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M349,257 L349,267 L359,267 L349,257 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="131" x="210" y="275.897">System show errors:</text><ellipse cx="215.5" cy="289.912" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="222" y="293.603">Colors repeated</text><ellipse cx="215.5" cy="307.618" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="104" x="222" y="311.309">Number of colors</text></g><!--MD5=[2029a8c7c22ec55048c08088870304a8]
+link GS3 to GS4--><g id="link_GS3_GS4"><path d="M68.64,575.47 C67.85,589.76 67,605 67,605 C67,605 67,695 67,695 C67,695 138.04,721.46 180.67,737.33 " fill="none" id="GS3-to-GS4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="185.32,739.07,178.2791,732.1834,180.6337,737.3269,175.4901,739.6815,185.32,739.07" style="stroke:#181818;stroke-width:1.0;"/><path d="M72,610 L72,690 L401,690 L401,620 L391,610 L72,610 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M391,610 L391,620 L401,620 L391,610 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="94" x="78" y="628.897">System shows:</text><ellipse cx="83.5" cy="642.912" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="256" x="90" y="646.603">Color white if color and position are correct</text><ellipse cx="83.5" cy="660.618" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="296" x="90" y="664.309">Color black if color is correct but position is wrong</text><ellipse cx="83.5" cy="678.3241" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="269" x="90" y="682.0151">Color empty if color is not in the combination</text></g><!--MD5=[52cc10398a0c54301bda84449913db16]
+link GS4 to GC2--><g id="link_GS4_GC2"><path d="M237.45,764.35 C277.04,785.12 351.96,824.42 382.03,840.19 " fill="none" id="GS4-to-GC2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="386.08,842.32,379.9756,834.591,381.6545,839.993,376.2525,841.6719,386.08,842.32" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[d4be03c402944588ee93fe78874debfa]
+link GC2 to GS1--><g id="link_GC2_GS1"><path d="M398.15,838.82 C407.1,815.6 432,751 432,751 C432,287.5 432,287.5 432,287.5 C432,287.5 372.52,192.28 341.44,142.52 " fill="none" id="GC2-to-GS1" style="stroke:#FF0000;stroke-width:1.0;"/><polygon fill="#FF0000" points="338.96,138.55,340.3468,148.3007,341.6138,142.7876,347.127,144.0546,338.96,138.55" style="stroke:#FF0000;stroke-width:1.0;"/><path d="M437,445 L437,490 L599,490 L599,455 L589,445 L437,445 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M589,445 L589,455 L599,455 L589,445 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="109" x="443" y="463.897">System requires:</text><ellipse cx="448.5" cy="477.912" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="455" y="481.603">Propose combination</text></g><!--MD5=[92a31a3b52518f5fbb108e5b780e7d64]
+link GC2 to GS5--><g id="link_GC2_GS5"><path d="M395,860.39 C395,873.69 395,896.21 395,914.68 " fill="none" id="GC2-to-GS5" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="395,919.26,399,910.26,395,914.26,391,910.26,395,919.26" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[f5b49d77f57023df1c47b12652b7cda4]
+link GS5 to GC3--><g id="link_GS5_GC3"><path d="M393.64,971.47 C392.85,985.76 392,1001 392,1001 C392,1001 392,1056 392,1056 C392,1056 464.48,1080.97 496.31,1091.94 " fill="none" id="GS5-to-GC3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="501.01,1093.56,493.8094,1086.8406,496.284,1091.9274,491.1972,1094.4021,501.01,1093.56" style="stroke:#181818;stroke-width:1.0;"/><path d="M397,1006 L397,1051 L596,1051 L596,1016 L586,1006 L397,1006 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M586,1006 L586,1016 L596,1016 L586,1006 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="109" x="403" y="1024.897">System requires:</text><ellipse cx="408.5" cy="1038.912" fill="#000000" rx="2.5" ry="2.5" style="stroke:#000000;stroke-width:0.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="166" x="415" y="1042.603">Yes or No to play new game</text></g><!--MD5=[4857699d617b9f69d8317de9561df172]
+link GC3 to GS1--><g id="link_GC3_GS1"><path d="M519.01,1093.5 C541.75,1083.59 605,1056 605,1056 C605,1056 627,947 627,947 C627,287.5 627,287.5 627,287.5 C627,287.5 430.98,174.98 353.75,130.65 " fill="none" id="GC3-to-GS1" style="stroke:#008000;stroke-width:1.0;"/><polygon fill="#008000" points="349.71,128.33,355.5143,136.2867,354.0433,130.8245,359.5055,129.3535,349.71,128.33" style="stroke:#008000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="628" y="655.397">Yes</text></g><!--MD5=[3908b330952c0e47e447e3c458dd677d]
+link GC3 to *end--><g id="link_GC3_*end"><path d="M511,1110.36 C511,1127.98 511,1161.99 511,1182.06 " fill="none" id="GC3-to-*end" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="511,1187.02,515,1178.02,511,1182.02,507,1178.02,511,1187.02" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="18" x="512" y="1154.897">No</text></g><!--MD5=[6872681e0aa604520220c0541eebc5c2]
+@startuml
+!define EMPTY " "
+!define COLOR_RED [#red]
+!define COLOR_GREEN [#green]
+skinparam linetype polyline
+
+state GS1 as EMPTY
+state GS2 as EMPTY
+state GS3 as EMPTY
+state GS4 as EMPTY
+state GS5 as EMPTY
+
+state GC1 <<choice>>
+state GC2 <<choice>>
+state GC3 <<choice>>
+
+[*] - -> GS1
+GS1 - -> GS2
+note on link
+    <b>System requires: </b>
+    * Propose combination
+end note
+
+GS2 - -> GC1
+GC1 -COLOR_GREEN-> GS3
+GC1 -COLOR_RED-> GS1
+note on link
+    <b>System show errors: </b>
+    * Colors repeated
+    * Number of colors
+end note
+
+GS3 - -> GS4
+note on link
+    <b>System shows: </b>
+    * Color white if color and position are correct
+    * Color black if color is correct but position is wrong
+    * Color empty if color is not in the combination
+end note
+
+GS4 - -> GC2
+GC2 -COLOR_RED-> GS1
+note on link
+    <b>System requires: </b>
+    * Propose combination
+end note
+
+GC2 - -> GS5
+GS5 - -> GC3
+note on link
+    <b>System requires: </b>
+    * Yes or No to play new game
+end note
+
+GC3 -COLOR_GREEN-> GS1: Yes
+GC3 - -> [*]: No
+@enduml
+
+@startuml
+skinparam linetype polyline
+
+state GS1 as " "
+state GS2 as " "
+state GS3 as " "
+state GS4 as " "
+state GS5 as " "
+
+state GC1 <<choice>>
+state GC2 <<choice>>
+state GC3 <<choice>>
+
+[*] - -> GS1
+GS1 - -> GS2
+note on link
+    <b>System requires: </b>
+    * Propose combination
+end note
+
+GS2 - -> GC1
+GC1 -[#green]-> GS3
+GC1 -[#red]-> GS1
+note on link
+    <b>System show errors: </b>
+    * Colors repeated
+    * Number of colors
+end note
+
+GS3 - -> GS4
+note on link
+    <b>System shows: </b>
+    * Color white if color and position are correct
+    * Color black if color is correct but position is wrong
+    * Color empty if color is not in the combination
+end note
+
+GS4 - -> GC2
+GC2 -[#red]-> GS1
+note on link
+    <b>System requires: </b>
+    * Propose combination
+end note
+
+GC2 - -> GS5
+GS5 - -> GC3
+note on link
+    <b>System requires: </b>
+    * Yes or No to play new game
+end note
+
+GC3 -[#green]-> GS1: Yes
+GC3 - -> [*]: No
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 12:01:30 ECT 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
