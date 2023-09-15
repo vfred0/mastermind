@@ -1,20 +1,30 @@
 @startuml
+skinparam linetype polyline
 state isResume <<choice>>
 state question as " "
 
-[*] --> IN_SETTINGS
-note right of IN_SETTINGS : Set the size of the combination
+[*] --> OPENED_MENU
 
-IN_GAME --> IN_GAME
-note right of IN_GAME : Until the combination is guessed
+OPENED_MENU --> OPENED_SETTINGS
+note right of OPENED_SETTINGS : *Set the size of the combination or \n*Size of number attempts
 
-IN_SETTINGS --> IN_GAME
-IN_GAME --> FINISHED_GAME
+OPENED_MENU ---> OPENED_GAME
+
+OPENED_MENU --> OPENED_RULES
+note right of OPENED_RULES : *Rules of the game
+
+OPENED_GAME --> OPENED_GAME
+note right of OPENED_GAME : Until the combination is guessed
+
+OPENED_GAME --> FINISHED_GAME
 
 FINISHED_GAME --> question
-note on link : Do you want to play a new game?
+note on link : Do you want to play a new game? or\nDo you want to resume game?
 
 question --> isResume
-isResume --> IN_SETTINGS : Yes
+isResume --> OPENED_MENU : Yes
 isResume --> [*] : No
+OPENED_GAME --> [*]
+OPENED_SETTINGS --> [*]
+OPENED_RULES --> [*]
 @enduml

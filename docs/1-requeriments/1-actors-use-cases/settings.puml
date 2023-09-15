@@ -3,6 +3,8 @@ left to right direction
 actor Player
 
 rectangle "Settings" {
-    Player -- (Set size of combination)
+    Player -- (SetSizeCombination)
+    Player -- (SetNumberAttempts)
+    Player -- (SetDefaultSettings)
 }
 @enduml

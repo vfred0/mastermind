@@ -1,0 +1,38 @@
+@startuml
+!define EMPTY " "
+!define COLOR_RED [#red]
+!define COLOR_GREEN [#green]
+skinparam linetype polyline
+
+[*] --> SET_NUMBER_ATTEMPTS_OR_SIZE_COMBINATION
+
+state SET_NUMBER_ATTEMPTS_OR_SIZE_COMBINATION {
+    state NAS1 as EMPTY
+    state NAS2 as EMPTY
+
+    state NAC1 <<choice>>
+
+    [*] --> NAS1
+    NAS1 --> NAS2
+    note right of NAS1
+        <b> System requires: </b>
+        * Enter a number
+    end note
+
+    NAS2 --> NAC1
+    note right of NAS2
+        <b> User provides: </b>
+        * A number
+    end note
+
+    NAC1 -COLOR_RED-> NAS1
+    note on link
+        <b> System show errors: </b>
+        * Negative number
+    end note
+
+    NAC1 --> [*]
+}
+
+SET_NUMBER_ATTEMPTS_OR_SIZE_COMBINATION --> [*]
+@enduml

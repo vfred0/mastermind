@@ -50,6 +50,7 @@ GS5 --> GC3
 note on link
     <b>System requires: </b>
     * Yes or No to play new game
+    * Yes or No to resume game
 end note
 
 GC3 -COLOR_GREEN-> GS1: Yes
