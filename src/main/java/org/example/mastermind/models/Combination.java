@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.example.mastermind.types.Color;
+import org.example.utils.Console;
 
 public class Combination {
     protected static final int width = 5;
@@ -21,10 +22,10 @@ public class Combination {
         this.colors = colors;
     }
 
-    protected static boolean haveColorsRepeat(List<Color> colors) {
+    protected static boolean hasRepeatedColors(List<Color> colors) {
         for (int i = 0; i < colors.size(); i++) {
-            for (int j = 0; j < colors.size(); j++) {
-                if (i != j && colors.get(i).equals(colors.get(j))) {
+            for (int j = i + 1; j < colors.size(); j++) {
+                if (Color.equals(colors.get(i), colors.get(j))) {
                     return true;
                 }
             }
