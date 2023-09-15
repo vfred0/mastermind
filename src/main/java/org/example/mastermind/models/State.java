@@ -20,5 +20,4 @@ public class State {
     public void reset() {
         stateValue = StateValue.INITIAL;
     }
-
 }
