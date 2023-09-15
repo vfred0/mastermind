@@ -7,7 +7,7 @@ import org.example.mastermind.types.Color;
 import org.example.utils.Console;
 
 public class Combination {
-    protected static final int width = 5;
+    protected static final int SIZE = 5;
     private List<Color> colors;
 
     public Combination() {
