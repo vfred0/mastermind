@@ -55,8 +55,8 @@ public class Game {
         return secret.equals(proposed[attempts - 1]);
     }
 
-    public Error getError(List<Color> list) {
-        return proposed[attempts].getError(list);
+    public Error getError(List<Color> colors) {
+        return proposed[attempts].getError(colors);
     }
 
     public void setWidthCombination(int width) {
