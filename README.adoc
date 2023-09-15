@@ -2,8 +2,6 @@
 
 == Modelo del dominio
 
-Las instrucciones del juego se encuentran disponibles en el siguiente video:
-
-video::2-hTeg2M6GQ[youtube]
+Las instrucciones del juego se encuentran disponibles en el siguiente https://www.youtube.com/watch?v=2-hTeg2M6GQ[enlace]
 
 image::https://github.com/vfred0/mastermind/blob/main/docs/images/domain-model.svg?raw=true[domain model]
