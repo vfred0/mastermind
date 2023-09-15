@@ -32,8 +32,8 @@ public class PlayController extends Controller {
         return game.isWinner();
     }
 
-    public Error getError(List<Color> list) {
-        return game.getError(list);
+    public Error getError(List<Color> colors) {
+        return game.getError(colors);
     }
 
     public void add(List<Color> colors) {
