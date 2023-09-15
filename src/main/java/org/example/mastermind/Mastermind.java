@@ -20,7 +20,7 @@ public class Mastermind {
     private void play() {
         Controller controller;
         do {
-            controller = logic.geController();
+            controller = logic.getController();
             if (existsController(controller)) {
                 view.interact(controller);
             }
