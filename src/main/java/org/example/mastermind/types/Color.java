@@ -12,6 +12,10 @@ public enum Color {
         return new ArrayList<>(Arrays.asList(Color.values()));
     }
 
+    public static boolean equals(Color color, Color otherColor) {
+        return color.equals(otherColor);
+    }
+
     private String getInitial() {
         return charAt(name(), 0);
     }
