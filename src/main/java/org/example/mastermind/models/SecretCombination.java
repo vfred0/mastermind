@@ -6,17 +6,16 @@ import java.util.List;
 import org.example.mastermind.types.Color;
 
 public class SecretCombination extends Combination {
-    private static final String CODE_COLOR = "?";
 
     public void generate() {
-        List<Color> randomColors;
+        List<Color> combination;
         do {
-            randomColors = new ArrayList<>();
-            for (int i = 0; i < width; i++) {
-                randomColors.add(Color.getRandom());
+            combination = new ArrayList<>();
+            for (int i = 0; i < SIZE; i++) {
+                combination.add(Color.getRandom());
             }
-        } while (haveColorsRepeat(randomColors));
-        setColors(randomColors);
+        } while (hasRepeatedColors(combination));
+        setColors(combination);
     }
 
     public boolean equals(ProposedCombination proposed) {
