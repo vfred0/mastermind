@@ -1,18 +1,98 @@
-= Mastermind
+= Game Mastermind
 
-== Modelo del dominio
+== Domain Model
 
-Las instrucciones del juego se encuentran disponibles en el siguiente https://www.youtube.com/watch?v=2-hTeg2M6GQ[enlace]
+The game instructions are available on: https://www.youtube.com/watch?v=2-hTeg2M6GQ[enlace]
 
 image::https://github.com/vfred0/mastermind/blob/main/docs/images/0-domain-model/mastermind.svg?raw=true[domain model]
 
-== Disciplinas de requisitos
-=== Actores y casos de usos
+== Requirements discipline
+=== Actors and use cases
 image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/game.svg?raw=true[game]
 
 image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/settings.svg?raw=true[settings]
 
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/rule.svg?raw=true[rules]
+
+=== Use cases context
 image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/use-cases-context.svg?raw=true[context]
 
-=== Especificación de casos de uso
+=== Use case specification
+Game
+
 image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/2-use-cases-specifications/game.svg?raw=true[]
+
+Settings
+
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/2-use-cases-specifications/settings.svg?raw=true[]
+
+=== Prototype User Interface
+Console View
+[source, plain]
+Welcome to Mastermind
+1. Play
+2. Settings
+3. Rules
+4. Exit
+
+Option for play
+[source, plain]
+Available colors:
+r -> red
+g -> green
+b -> blue
+y -> yellow
+o -> orange
+p -> purple
+e -> empty
+Enter the first letters of each color...
+
+[source, plain]
+Enter a proposed combination: rybye
+Error, the combination have repeated colors.
+Enter a proposed combination: rybe
+Error, the combination must have 5 colors.
+
+[source, plain]
+Enter a proposed combination: rybep
+?????                       Result
+RYBEP == WBWEW: You're get 3 whites, 1 blacks and 1 empty color
+RYBOP == WBWEW: You're get 3 whites, 1 blacks and 1 empty color
+RGBYP == WBWEW: You're get 3 whites, 1 blacks and 1 empty color
+You have 3 attempts left.
+
+[source, plain]
+You have 0 attempts left.
+You has lost!.
+
+[source, plain]
+Do you want to resume game? (y/n):
+
+[source, plain]
+You have 1 attempts left.
+You has win!.
+Do you want to play new game? (y/n):
+
+Option for settings
+[source, plain]
+1. Set size of combination
+2. Set number of attempts
+3. Set default settings
+3. Back
+
+Option for set size of combination
+[source, plain]
+Enter size of combination: -1
+Error, enter positive number.
+Enter size of combination: 12
+
+Option for set size of attempts
+[source, plain]
+Enter number of attempts: -1
+Error, enter positive number.
+Enter number of attempts: 12
+
+Option for rules
+
+[source, plain]
+The game consists of guessing the combination with the attempts you have available, which by default are 10 attempts. If you guess then you have won otherwise you lost. Press [Enter] to back...
