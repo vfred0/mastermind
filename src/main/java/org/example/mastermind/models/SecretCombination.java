@@ -26,16 +26,7 @@ public class SecretCombination extends Combination {
         return new Result(proposed, this);
     }
 
-
-    public String getCodeColors() {
-        String result = "";
-        for (int i = 0; i < width; i++) {
-            result += CODE_COLOR;
-        }
-        return result;
-    }
-
-    public boolean containsColor(ProposedCombination proposed, int i) {
-        return getColors().contains(getColor(proposed, i));
+    public boolean containsColor(ProposedCombination proposed, int position) {
+        return getColors().contains(getColor(proposed, position));
     }
 }
