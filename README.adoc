@@ -4,4 +4,15 @@
 
 Las instrucciones del juego se encuentran disponibles en el siguiente https://www.youtube.com/watch?v=2-hTeg2M6GQ[enlace]
 
-image::https://github.com/vfred0/mastermind/blob/main/docs/images/domain-model.svg?raw=true[domain model]
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/0-domain-model/mastermind.svg?raw=true[domain model]
+
+== Disciplinas de requisitos
+=== Actores y casos de usos
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/game.svg?raw=true[game]
+
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/settings.svg?raw=true[settings]
+
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/1-actors-use-cases/use-cases-context.svg?raw=true[context]
+
+=== Especificación de casos de uso
+image::https://github.com/vfred0/mastermind/blob/main/docs/images/1-requeriments/2-use-cases-specifications/game.svg?raw=true[]
