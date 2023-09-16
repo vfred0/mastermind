@@ -18,17 +18,16 @@ public class ProposedCombinationView {
     }
 
     public List<Color> read(PlayController controller) {
-        String characters;
+        List<Color> colors;
         Error error;
         do {
             new MessageView().write(Message.PROPOSED_COMBINATION);
-            characters = Console.getInstance().readString();
-            error = controller.getError(Color.get(characters));
+            colors = Color.getColorsFromCharacters(Console.getInstance().readString());
+            error = controller.getError(colors);
             if (error.exists()) {
                 new ErrorView(error);
             }
         } while (error.exists());
-
-        return Color.get(characters);
+        return colors;
     }
 }
