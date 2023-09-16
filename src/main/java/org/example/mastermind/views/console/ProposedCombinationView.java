@@ -10,8 +10,8 @@ import org.example.mastermind.types.Error;
 import org.example.mastermind.types.Message;
 
 public class ProposedCombinationView {
-    public ProposedCombinationView(ProposedCombination propesedCombination) {
-        Console.getInstance().write(propesedCombination.getInitials());
+    public ProposedCombinationView(ProposedCombination proposedCombination) {
+        Console.getInstance().write(proposedCombination.getFirstColorLetters());
     }
 
     public ProposedCombinationView() {

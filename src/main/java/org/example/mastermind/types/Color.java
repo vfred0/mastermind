@@ -24,7 +24,7 @@ public enum Color {
         return values()[i];
     }
 
-    public static String getAllInitials(List<Color> colors) {
+    public static String getAllFirstLetters(List<Color> colors) {
         String result = "";
         for (Color color : colors) {
             result += color.getInitial();
@@ -32,25 +32,25 @@ public enum Color {
         return result;
     }
 
-    public static String getAllInitials() {
-        return getAllInitials(getAll());
+    public static String getAllFirstLetters() {
+        return getAllFirstLetters(getAll());
     }
 
     public static List<Color> get(String characters) {
-        List<Color> result = new ArrayList<>();
+        List<Color> colors = new ArrayList<>();
         boolean exist = false;
         for (int i = 0; i < characters.length(); i++) {
             for (int j = 0; j < getAll().size() - 1; j++) {
                 if (get(j).getInitial().equalsIgnoreCase(charAt(characters, i))) {
                     exist = true;
-                    result.add(get(j));
+                    colors.add(get(j));
                 }
             }
             if (!exist) {
-                result.add(EMPTY);
+                colors.add(EMPTY);
             }
         }
-        return result;
+        return colors;
     }
 
     private static String charAt(String input, int i) {

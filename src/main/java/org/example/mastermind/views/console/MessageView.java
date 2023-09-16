@@ -4,26 +4,35 @@ import org.example.utils.Console;
 import org.example.mastermind.types.Message;
 
 public class MessageView {
-    private String[] messages = {"----- MASTERMIND -----", "*****", "# attempt(s): ", " --> # blacks and # whites",
-            "Propose a combination: ", "You've won!!! ;-)", "You've lost!!! :-(", "Do you want to continue?(y/n)"};
+    private String[] messages;
+
+    private Console console;
 
     public MessageView(Message message) {
+        setAttributes();
         writeln(message);
     }
 
     public MessageView() {
+        setAttributes();
+    }
+
+    private void setAttributes() {
+        messages = new String[]{"----- MASTERMIND -----", "*****", "# attempt(s): ", " --> # blacks and # whites",
+                "Propose a combination: ", "You've won!!! ;-)", "You've lost!!! :-(", "Do you want to continue?(y/n): "};
+        console = Console.getInstance();
     }
 
     public void writeln(Message message) {
-        Console.getInstance().writeln(getOrdinal(message));
+        console.writeln(getOrdinal(message));
     }
 
-    public void writeln(Message message, int attemp) {
-        Console.getInstance().writeln(getOrdinal(message).replace("#", String.valueOf(attemp)));
+    public void writeln(Message message, int attempt) {
+        console.writeln(getOrdinal(message).replace("#", String.valueOf(attempt)));
     }
 
     public void writeln(Message message, int blacks, int whites) {
-        Console.getInstance().writeln(getOrdinal(message).replaceFirst("#", String.valueOf(blacks))
+        console.writeln(getOrdinal(message).replaceFirst("#", String.valueOf(blacks))
                 .replaceFirst("#", String.valueOf(whites)));
     }
 
@@ -32,6 +41,6 @@ public class MessageView {
     }
 
     public void write(Message message) {
-        Console.getInstance().write(getOrdinal(message));
+        console.write(getOrdinal(message));
     }
 }
