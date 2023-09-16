@@ -6,7 +6,7 @@ import java.util.List;
 import org.example.mastermind.types.Color;
 
 public class Combination {
-    protected static final int SIZE = 5;
+    protected static int size = 5;
     private List<Color> colors;
 
     public Combination() {
@@ -34,5 +34,9 @@ public class Combination {
 
     protected Color getColor(Combination combination, int position) {
         return combination.colors.get(position);
+    }
+
+    public void setSize(int size) {
+        Combination.size = size;
     }
 }

@@ -3,10 +3,11 @@ package org.example.mastermind.controllers;
 import org.example.mastermind.models.Game;
 import org.example.mastermind.models.State;
 
-public class ElectionWidthCombinationController extends Controller {
+public class SettingsController extends Controller {
 
-    public ElectionWidthCombinationController(State state, Game game) {
+    public SettingsController(State state, Game game) {
         super(state, game);
+        game.init();
     }
 
     @Override
@@ -14,12 +15,11 @@ public class ElectionWidthCombinationController extends Controller {
         controllerVisitor.visit(this);
     }
 
-    public void setWidthCombination(int width) {
-        game.setWidthCombination(width);
+    public void setSizeCombination(int size) {
+        game.setSizeCombination(size);
     }
 
-    public void init() {
-        game.init();
+    public void setAttempts(int attempts) {
+        game.setAttempts(attempts);
     }
-
 }

@@ -9,7 +9,7 @@ public class Game {
     private SecretCombination secret;
     private ProposedCombination[] proposed;
     private int attempts;
-    private final int maxAttempts = 5;
+    private int maxAttempts = 2;
 
     public void init() {
         secret = new SecretCombination();
@@ -59,7 +59,11 @@ public class Game {
         return proposed[attempts].getError(colors);
     }
 
-    public void setWidthCombination(int width) {
-        // secret.setWidth(width);
+    public void setSizeCombination(int size) {
+         secret.setSize(size);
+    }
+
+    public void setAttempts(int attempts) {
+        this.maxAttempts = attempts;
     }
 }

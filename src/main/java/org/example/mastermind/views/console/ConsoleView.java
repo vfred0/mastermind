@@ -2,22 +2,22 @@ package org.example.mastermind.views.console;
 
 import org.example.mastermind.views.View;
 import org.example.mastermind.controllers.Controller;
-import org.example.mastermind.controllers.ElectionWidthCombinationController;
+import org.example.mastermind.controllers.SettingsController;
 import org.example.mastermind.controllers.PlayController;
 import org.example.mastermind.controllers.ResumeController;
 import org.example.mastermind.controllers.StartController;
 
 public class ConsoleView extends View {
-    private StartView startView;
-    private PlayView playView;
-    private ResumeView resumeView;
-    private ElectionWidthCombinationView electionView;
+    private final StartView startView;
+    private final PlayView playView;
+    private final ResumeView resumeView;
+    private final SettingsView settingsView;
 
     public ConsoleView() {
         startView = new StartView();
         playView = new PlayView();
         resumeView = new ResumeView();
-        electionView = new ElectionWidthCombinationView();
+        settingsView = new SettingsView();
     }
 
     @Override
@@ -41,8 +41,7 @@ public class ConsoleView extends View {
     }
 
     @Override
-    public void visit(ElectionWidthCombinationController controller) {
-        controller.init();
-        controller.next();
+    public void visit(SettingsController controller) {
+        settingsView.interact(controller);
     }
 }

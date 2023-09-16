@@ -7,5 +7,5 @@ public interface ControllerVisitor {
 
     void visit(ResumeController controller);
 
-    void visit(ElectionWidthCombinationController controller);
+    void visit(SettingsController controller);
 }

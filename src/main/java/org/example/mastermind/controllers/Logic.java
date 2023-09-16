@@ -4,28 +4,27 @@ import org.example.mastermind.models.Game;
 import org.example.mastermind.models.State;
 
 public class Logic {
-    private State state;
-    private Game game;
-    private StartController startController;
-    private PlayController playController;
-    private ResumeController resumeController;
-    private ElectionWidthCombinationController election;
+    private final State state;
+    private final StartController startController;
+    private final PlayController playController;
+    private final ResumeController resumeController;
+    private final SettingsController settingsController;
 
     public Logic() {
         this.state = new State();
-        this.game = new Game();
+        Game game = new Game();
         this.startController = new StartController(state, game);
         this.playController = new PlayController(state, game);
         this.resumeController = new ResumeController(state, game);
-        this.election = new ElectionWidthCombinationController(state, game);
+        this.settingsController = new SettingsController(state, game);
     }
 
-    public Controller geController() {
+    public Controller getController() {
         switch (state.getValueState()) {
             case INITIAL:
                 return startController;
-            case ELECTION:
-                return election;
+            case IN_SETTINGS:
+                return settingsController;
             case IN_GAME:
                 return playController;
             case RESUME:
