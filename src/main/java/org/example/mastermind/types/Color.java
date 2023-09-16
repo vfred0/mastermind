@@ -12,8 +12,8 @@ public enum Color {
         return new ArrayList<>(Arrays.asList(Color.values()));
     }
 
-    public static boolean equals(Color color, Color otherColor) {
-        return color.equals(otherColor);
+    public static boolean equalsFromPositions(int colorPosition, int otherColorPosition) {
+        return get(colorPosition).equals(get(otherColorPosition));
     }
 
     private String getFirstLetter() {
@@ -48,8 +48,8 @@ public enum Color {
         return colors;
     }
 
-    private static String charAt(String input, int i) {
-        return String.valueOf(input.charAt(i));
+    private static String charAt(String input, int position) {
+        return String.valueOf(input.charAt(position));
     }
 
     public static Color getRandom() {
