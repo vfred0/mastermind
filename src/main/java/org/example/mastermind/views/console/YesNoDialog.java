@@ -5,18 +5,21 @@ import org.example.utils.Console;
 import org.example.mastermind.types.Message;
 
 public class YesNoDialog {
-    private boolean exit;
+    public final String yesReply = "Yy";
+    public final String noReply = "Nn";
+    public final String yesNoReply = yesReply + noReply;
+    private final boolean isNoReply;
 
-    public YesNoDialog(Message resume) {
+    public YesNoDialog() {
         String reply;
         do {
             new MessageView().write(Message.RESUME);
             reply = Console.getInstance().readString();
-        } while (!"YyNn".contains(reply));
-        exit = "Nn".contains(reply);
+        } while (!yesNoReply.contains(reply));
+        isNoReply = noReply.contains(reply);
     }
 
-    public boolean isExit() {
-        return exit;
+    public boolean isNoReply() {
+        return isNoReply;
     }
 }
