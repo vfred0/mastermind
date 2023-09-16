@@ -12,7 +12,6 @@ public class GameView {
         for (int i = 0; i < controller.getAttempts(); i++) {
             new ProposedCombinationView(controller.getProposedCombination(i));
             messageView.writeln(Message.RESULT, controller.getResult(i).getBlacks(), controller.getResult(i).getWhites());
-
         }
     }
 }

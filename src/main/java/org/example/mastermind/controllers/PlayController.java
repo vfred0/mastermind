@@ -51,5 +51,4 @@ public class PlayController extends Controller {
     public Result getResult(int attempts) {
         return game.getResult(attempts);
     }
-
 }
