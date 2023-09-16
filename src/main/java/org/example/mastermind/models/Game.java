@@ -13,7 +13,6 @@ public class Game {
 
     public void init() {
         secret = new SecretCombination();
-        secret.generate();
         proposed = new ProposedCombination[maxAttempts];
         for (int i = 0; i < maxAttempts; i++) {
             proposed[i] = new ProposedCombination();
@@ -60,7 +59,8 @@ public class Game {
     }
 
     public void setSizeCombination(int size) {
-         secret.setSize(size);
+        secret.setSize(size);
+        secret.generate();
     }
 
     public void setAttempts(int attempts) {
