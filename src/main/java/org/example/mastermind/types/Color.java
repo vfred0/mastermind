@@ -16,38 +16,33 @@ public enum Color {
         return color.equals(otherColor);
     }
 
-    private String getInitial() {
+    private String getFirstLetter() {
         return charAt(name(), 0);
     }
 
-    private static Color get(int i) {
-        return values()[i];
+    private static Color get(int position) {
+        return values()[position];
     }
 
     public static String getAllFirstLetters(List<Color> colors) {
-        String result = "";
+        StringBuilder allFirstLetters = new StringBuilder();
         for (Color color : colors) {
-            result += color.getInitial();
+            allFirstLetters.append(color.getFirstLetter());
         }
-        return result;
+        return allFirstLetters.toString();
     }
 
     public static String getAllFirstLetters() {
         return getAllFirstLetters(getAll());
     }
 
-    public static List<Color> get(String characters) {
+    public static List<Color> getColorsFromCharacters(String characters) {
         List<Color> colors = new ArrayList<>();
-        boolean exist = false;
+        String firstLetters = getAllFirstLetters().toLowerCase();
         for (int i = 0; i < characters.length(); i++) {
-            for (int j = 0; j < getAll().size() - 1; j++) {
-                if (get(j).getInitial().equalsIgnoreCase(charAt(characters, i))) {
-                    exist = true;
-                    colors.add(get(j));
-                }
-            }
-            if (!exist) {
-                colors.add(EMPTY);
+            String letter = charAt(characters, i);
+            if (firstLetters.contains(letter)) {
+                colors.add(get(firstLetters.indexOf(letter)));
             }
         }
         return colors;
