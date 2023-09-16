@@ -6,11 +6,12 @@ import java.util.List;
 import org.example.mastermind.types.Color;
 
 public class Combination {
-    protected int size = 5;
+    protected static int size;
     private List<Color> colors;
 
     public Combination() {
         colors = new ArrayList<>();
+        setSize(5);
     }
 
     protected List<Color> getColors() {
@@ -24,7 +25,7 @@ public class Combination {
     protected static boolean hasRepeatedColors(List<Color> colors) {
         for (int i = 0; i < colors.size(); i++) {
             for (int j = i + 1; j < colors.size(); j++) {
-                if (Color.equals(colors.get(i), colors.get(j))) {
+                if (Color.equalsFromPositions(i, j)) {
                     return true;
                 }
             }
@@ -37,6 +38,6 @@ public class Combination {
     }
 
     public void setSize(int size) {
-        this.size = size;
+        Combination.size = size;
     }
 }
