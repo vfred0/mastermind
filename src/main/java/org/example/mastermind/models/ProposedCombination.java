@@ -23,7 +23,7 @@ public class ProposedCombination extends Combination {
     private boolean containsSizeValid(List<Color> colors) {
         int size = colors.size();
         int minSize = 0;
-        return size > minSize && size <= Combination.size;
+        return size > minSize && size <= super.size;
     }
 
     public boolean equalsColor(SecretCombination secret, int position) {
