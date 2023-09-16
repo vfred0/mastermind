@@ -15,6 +15,6 @@ public class PlayView {
             message = Message.WINNER;
         }
         new MessageView(message);
-        controller.next();
+        controller.nextState();
     }
 }

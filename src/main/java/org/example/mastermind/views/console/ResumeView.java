@@ -9,7 +9,7 @@ public class ResumeView {
         if (!new YesNoDialog(Message.RESUME).isExit()) {
             controller.reset();
         } else {
-            controller.next();
+            controller.nextState();
         }
     }
 
