@@ -11,7 +11,7 @@ public class SecretCombination extends Combination {
         List<Color> combination;
         do {
             combination = new ArrayList<>();
-            for (int i = 0; i < SIZE; i++) {
+            for (int i = 0; i < size; i++) {
                 combination.add(Color.getRandom());
             }
         } while (hasRepeatedColors(combination));
