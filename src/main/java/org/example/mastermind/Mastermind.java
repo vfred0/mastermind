@@ -1,22 +1,20 @@
 package org.example.mastermind;
 
 import org.example.mastermind.controllers.Logic;
-import org.example.mastermind.views.console.ConsoleView;
+import org.example.mastermind.views.View;
 
-public class Mastermind {
+public abstract class Mastermind {
     private final Logic logic;
-    private final ConsoleView view;
-
-    public static void main(String[] args) {
-        new Mastermind().play();
-    }
+    private final View view;
 
     public Mastermind() {
-        view = new ConsoleView();
+        view = createView();
         logic = new Logic();
     }
 
-    private void play() {
+    protected abstract View createView();
+
+    protected void play() {
         do {
             view.interact(logic.getController());
         } while (!logic.isFinish());
