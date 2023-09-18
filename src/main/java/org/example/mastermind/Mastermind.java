@@ -1,6 +1,5 @@
 package org.example.mastermind;
 
-import org.example.mastermind.controllers.Controller;
 import org.example.mastermind.controllers.Logic;
 import org.example.mastermind.views.console.ConsoleView;
 
@@ -18,16 +17,8 @@ public class Mastermind {
     }
 
     private void play() {
-        Controller controller;
         do {
-            controller = logic.getController();
-            if (existsController(controller)) {
-                view.interact(controller);
-            }
-        } while (existsController(controller));
-    }
-
-    private boolean existsController(Controller controller) {
-        return controller != null;
+            view.interact(logic.getController());
+        } while (!logic.isFinish());
     }
 }

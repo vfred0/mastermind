@@ -20,4 +20,8 @@ public class State {
     public void reset() {
         stateValue = StateValue.INITIAL;
     }
+
+    public boolean isFinish() {
+        return stateValue == StateValue.FINISH;
+    }
 }

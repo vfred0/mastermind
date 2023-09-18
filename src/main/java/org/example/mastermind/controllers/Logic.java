@@ -2,35 +2,32 @@ package org.example.mastermind.controllers;
 
 import org.example.mastermind.models.Game;
 import org.example.mastermind.models.State;
+import org.example.mastermind.types.StateValue;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Logic {
     private final State state;
-    private final StartController startController;
-    private final PlayController playController;
-    private final ResumeController resumeController;
-    private final SettingsController settingsController;
+
+    private final Map<StateValue, Controller> controllers;
 
     public Logic() {
         this.state = new State();
         Game game = new Game();
-        this.startController = new StartController(state, game);
-        this.playController = new PlayController(state, game);
-        this.resumeController = new ResumeController(state, game);
-        this.settingsController = new SettingsController(state, game);
+        controllers = new HashMap<>();
+        controllers.put(StateValue.INITIAL, new StartController(state, game));
+        controllers.put(StateValue.IN_SETTINGS, new SettingsController(state, game));
+        controllers.put(StateValue.IN_GAME, new PlayController(state, game));
+        controllers.put(StateValue.RESUME, new ResumeController(state, game));
+        controllers.put(StateValue.FINISH, null);
+    }
+
+    public boolean isFinish() {
+        return state.isFinish();
     }
 
     public Controller getController() {
-        switch (state.getValueState()) {
-            case INITIAL:
-                return startController;
-            case IN_SETTINGS:
-                return settingsController;
-            case IN_GAME:
-                return playController;
-            case RESUME:
-                return resumeController;
-            default:
-                return null;
-        }
+        return controllers.get(state.getValueState());
     }
 }
