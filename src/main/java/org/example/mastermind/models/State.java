@@ -1,27 +1,27 @@
 package org.example.mastermind.models;
 
-import org.example.mastermind.types.StateValue;
+import org.example.mastermind.types.PlayStateValue;
 
 public class State {
-    private StateValue stateValue;
+    private PlayStateValue playStateValue;
 
     public State() {
         reset();
     }
 
     public void next() {
-        stateValue = StateValue.values()[stateValue.ordinal() + 1];
+        playStateValue = PlayStateValue.values()[playStateValue.ordinal() + 1];
     }
 
-    public StateValue getValueState() {
-        return stateValue;
+    public PlayStateValue getValueState() {
+        return playStateValue;
     }
 
     public void reset() {
-        stateValue = StateValue.INITIAL;
+        playStateValue = PlayStateValue.IN_GAME;
     }
 
     public boolean isFinish() {
-        return stateValue == StateValue.FINISH;
+        return playStateValue == PlayStateValue.FINISH;
     }
 }
