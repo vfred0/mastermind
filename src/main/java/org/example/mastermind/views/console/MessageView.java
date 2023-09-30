@@ -18,8 +18,16 @@ public class MessageView {
     }
 
     private void setAttributes() {
-        messages = new String[]{"----- MASTERMIND -----", "*****", "# attempt(s): ", " --> # blacks and # whites",
-                "Propose a combination: ", "You've won!!! ;-)", "You've lost!!! :-(", "Do you want to continue?(y/n): "};
+        messages = new String[]{
+                "----- Welcome to Mastermind -----",
+                "*****",
+                "# attempt(s): ",
+                " --> # blacks and # whites",
+                "Propose a combination: ",
+                "You've won!!! ;-)",
+                "You've lost!!! :-(",
+                "Do you want to continue?(y/n): "
+        };
         console = Console.getInstance();
     }
 

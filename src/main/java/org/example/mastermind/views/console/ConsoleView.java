@@ -1,20 +1,15 @@
 package org.example.mastermind.views.console;
 
+import org.example.mastermind.controllers.*;
 import org.example.mastermind.views.View;
-import org.example.mastermind.controllers.Controller;
-import org.example.mastermind.controllers.SettingsController;
-import org.example.mastermind.controllers.PlayController;
-import org.example.mastermind.controllers.ResumeController;
-import org.example.mastermind.controllers.StartController;
+import org.example.mastermind.views.console.menus.MainMenu;
 
 public class ConsoleView extends View {
-    private final StartView startView;
     private final PlayView playView;
     private final ResumeView resumeView;
     private final SettingsView settingsView;
 
     public ConsoleView() {
-        startView = new StartView();
         playView = new PlayView();
         resumeView = new ResumeView();
         settingsView = new SettingsView();
@@ -26,8 +21,8 @@ public class ConsoleView extends View {
     }
 
     @Override
-    public void visit(StartController controller) {
-        startView.interact(controller);
+    public void execute() {
+        new MainMenu(this).execute();
     }
 
     @Override
