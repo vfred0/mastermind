@@ -1,7 +1,6 @@
 package org.example.mastermind;
 
 import org.example.mastermind.views.View;
-import org.example.mastermind.views.console.menus.MainMenu;
 
 public abstract class Mastermind {
     private final View view;
