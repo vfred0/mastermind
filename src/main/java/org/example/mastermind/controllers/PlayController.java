@@ -13,6 +13,7 @@ public class PlayController extends Controller {
 
     public PlayController(State state, Game game) {
         super(state, game);
+        game.init();
     }
 
     @Override
